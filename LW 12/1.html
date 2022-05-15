@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LW 12.1</title>
+    <style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+</head>
+<body>
+
+    <h1 id = 'manager'>
+        <h3 id = 'name'></h3>
+        <h3 id = 'surname'></h3>
+        <h3 id = 'age'></h3>
+    </h1>
+
+    <h1 id = 'secretar'>
+        <h3 id = 'nameS'></h3>
+        <h3 id = 'surnameS'></h3>
+        <h3 id = 'ageS'></h3>
+    </h2>
+
+
+
+    <script>
+        var manager = 
+		{
+			name: 'АЛІСА',
+			surname: 'ЛОРЕН',
+			age: 20
+		};
+
+
+		function Secretary(age)
+		{
+			this.name = 'АНАСТАСІЯ',
+			this.surname = 'ВЕЛИКА', 
+			this.age = 20
+		};
+
+	var secretary = new Secretary ("1"); //
+
+
+    document.getElementById('manager').innerHTML = 'Менеджер:';
+    document.getElementById('name').innerHTML = "Ім`я: " + manager.name;
+    document.getElementById('surname').innerHTML ="Прізвише: " + manager.surname;
+    document.getElementById('age').innerHTML = "Вік: " + manager.age;
+    document.getElementById('secretar').innerHTML = 'Секретар:';
+    document.getElementById('nameS').innerHTML = "Ім`я: " + secretary.name;
+    document.getElementById('surnameS').innerHTML = "Прізвише: " + secretary.surname;
+    document.getElementById('ageS').innerHTML = "Вік: " + secretary.age;
+
+    </script>
+
+
+
+</body>
+</html>

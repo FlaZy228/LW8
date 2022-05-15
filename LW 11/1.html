@@ -1,0 +1,34 @@
+
+<html>
+<head>
+    <title>Функція Calculate</title>
+    <style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+</head>
+<body>
+    <script>
+        var a, b, c, d;  
+
+        function calculate() {
+            a = parseInt(prompt("Введіть число 1")); 
+            b = parseInt(prompt("Введіть число 2"));
+            c = parseInt(prompt("Введіть число 3"));
+        }
+        calculate(); 
+
+        function calculate1() {
+            document.write("a = " + a + "<br / >");
+            document.write("b = " + b + "<br / >");
+            document.write("c = " + c + "<br / >" );
+            document.write("<hr/>");
+        }
+        calculate1();
+
+        d = (a + b + c) / 3; 
+        document.write("Середнє арифметичне: " + d + "<br / >"); 
+    </script>
+</body>
+</html>

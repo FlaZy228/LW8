@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Операції над змінними</title>
+	<style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+    <script>
+		var x = 6; 
+		var y = 15; 
+		var z = 4;
+        var result;
+		
+		x+=y-x++*z;
+			document.write("x += y - x++ * z = " + x + "<br />");
+		
+        z=-x-y*5;
+			document.write("z =- x - y * 5 = " + z + "<br />");
+        
+		y/=x+5%z;
+			document.write("y /= x + 5%z = " + y + "<br />");
+				
+		z=x+++y*5;
+			document.write(" z = x ++ + y * 5 = " + z + "<br />");
+			
+		x=y-x++*z;
+			document.write("x = y - x ++ * z = " + x + "<br />");
+			
+	</script>
+
+</head>
+<body>
+</body>
+</html>

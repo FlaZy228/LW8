@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Функції арифметичних дій</title>
+    <style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+    <script>
+
+        function add(a, b) {
+            return a + b;
+        }
+        function sub(a, b) {
+            return a - b;
+        }
+        function mul(a, b) {
+            return a * b;
+        }
+        function div(a, b) {
+            return a / b;
+        }
+        var el1 = prompt("Введіть перше число: ");
+        var apply = prompt("Введіть знак арифметичної операції: + - * /");
+        var el2 = prompt("Введіть друге число: ");
+        var result = undefined;
+
+        el1 = parseInt(el1);
+        el2 = parseInt(el2);
+
+        switch (apply) {
+            case "+":
+                result = add(el1, el2);
+                break;
+            case "-":
+                result = sub(el1, el2);
+                break;
+            case "*":
+                result = mul(el1, el2);
+                break;
+            case "/":
+                result = div(el1, el2);
+                break;
+            default:
+                document.write("<p><b style='color:red'>" + apply + "</b> - не являється знаком арифметичної операції.");
+        }
+
+        if (result != undefined)
+            document.write("<p>" + el1 + " " + apply + " " + el2 + " = " + result);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
+

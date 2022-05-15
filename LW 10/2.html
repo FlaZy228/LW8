@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Дії з елементами масиву</title>
+	<style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+    <script type="text/javascript">
+
+
+    var mas1 = [1, 62, 195, 25, 75, 32, 6, 8, 86, 164, 47, 18, 28, 84, 15, 199];
+	
+	document.write(mas1);
+	document.write("<hr />");
+	
+	var sum = 0;
+	for (var i=0; i < mas1.length; i++)
+		{
+		sum += mas1[i];
+		}
+	document.write("сума елементів масиву: " + sum + "<br/>");
+	
+	var result = sum/mas1.length;
+	document.write("Середнє значення елементів масиву: " + result + "<br/>");
+	document.write("<hr />");
+
+   var max;
+   var min = mas1[0]
+	for (var i = 0; i < mas1.length; i++) 
+		{
+			if (mas1[i] > max);
+			max = mas1[i];
+		}
+		{
+			if (mas1[i] < min)
+			{min = mas1[i]};
+		}
+	document.write("Максимальне значення масиву: " + max + ("<br/>"));
+	document.write("Мінімальне значення: " + min + ("<br/>"));
+	document.write("<hr />");
+	
+	
+	for (var mas1=0; mas1 < 200; mas1++)
+		{
+			if (mas1 % 2 == !0)
+			{
+				document.write("Непарне число: " + mas1 +("<br/>"));
+			}
+		}
+	document.write("<hr />");
+	
+	
+    </script>
+
+</head>
+<body>
+</body>
+</html>

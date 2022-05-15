@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+</head>
+<body>
+    <input type="button" value="addParagraph" onclick="handler()"/>
+    <div id="div1">Text</div>
+    <script>
+        var i = 0;
+        var ourDiv = document.querySelector('div');
+        var ourBut = document.querySelector('input');
+        ourBut.addEventListener('click', function(){
+            if (i < 10){
+                let newElem = document.createElement('p');
+                let newText = document.createTextNode('Lenght ' + i);
+                newElem.appendChild(newText);
+                ourDiv.appendChild(newElem); 
+                i++;
+            } else {
+                let ourNewDivs = document.querySelectorAll('div p');
+                for (let i = 0; i < ourNewDivs.length; i++){
+                ourNewDivs[i].remove();
+                };
+            };
+        });
+    </script>
+</body>
+</html>

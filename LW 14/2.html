@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+</head>
+<body>
+    <p>ocean drive - duke dumont / slowed + reverb</p>
+    <p>ocean drive - duke dumont / slowed + reverb</p>
+    <p>ocean drive - duke dumont / slowed + reverb</p>
+    <p>ocean drive - duke dumont / slowed + reverb</p>
+    <p>ocean drive - duke dumont / slowed + reverb</p>
+    
+
+    <script>
+        var strMessage1 = document.getElementsByTagName("p");
+
+        var Module1 = {};
+
+        Module1.name = "MODULE1"; 
+
+        Module1.startModule1 = function () {
+            for (i=0; i < strMessage1.length; i++) {
+                strMessage1[i].innerHTML = "PARAGRAPH";
+            }
+        }
+
+        Module1.startModule1();
+    </script>
+</body>
+</html>

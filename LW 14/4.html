@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+	<style>
+        body{background-color: bisque;
+        font-weight: 800;
+	text-align: center;}
+    </style>
+</head>
+<body>
+
+	<div class="class1">NA'VI</div>
+	<div class="class2">NA'VI</div>
+	<div class="class3">NA'VI</div>
+	<div class="class4">NA'VI</div>
+<br>
+	<em class="class1">Cloud9</em>
+	<em class="class2">Cloud9</em>
+	<em class="class3">Cloud9</em>
+	<em class="class4">Cloud9</em>
+
+	<p class="class1">G2</p>
+	<p class="class2">G2</p>
+	<p class="class3">G2</p>
+	<p class="class4">G2</p>
+
+<script>
+var elems = {};
+
+elems.getElems = function (className) {
+	this.className = className;
+	var elemArray = [];
+	var elemList = document.body.children;
+
+	for (var i = 0; i < elemList.length; i++) {
+		
+		if(elemList[i].getAttribute("class") === this.className)
+			elemArray.push(elemList[i]);
+	}
+	return elemArray;
+}
+
+document.write("<br>" + elems.getElems('class2'));
+</script>
+</body>
+</html>
